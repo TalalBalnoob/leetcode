@@ -16,5 +16,15 @@
 
 // =================================================================================================================
 function uniqueOccurrences(arr: number[]): boolean {
-  const res: [number, number][] = []
+  let countMap: Map<number, number> = new Map()
+
+  for (let num of arr) {
+    countMap.set(num, (countMap.get(num) || 0) + 1)
+  }
+
+  if (new Set(countMap.values()).size !== countMap.size) {
+    return false
+  }
+
+  return true
 }
