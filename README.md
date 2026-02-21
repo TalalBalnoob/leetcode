@@ -8,4 +8,3 @@ Each file is named after the problem ID and title for easy lookup.
 
 - Problems are organized by their LeetCode number.  
 - File extensions may vary depending on the language used.  
-- Additions happen whenever I find the motivation to solve another one.
